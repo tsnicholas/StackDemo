@@ -1,0 +1,15 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Project1.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "Tim Nicholas",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
