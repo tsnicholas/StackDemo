@@ -1,4 +1,4 @@
-const nodeClasses = require("../Project1");
+const nodeClasses = require("../nodeModel");
 
 describe('stack node unit tests', () => {
     var stackNode;
