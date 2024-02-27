@@ -62,6 +62,7 @@ class StackNode {
             current = current.next;
         }
         console.log(output);
+        return output;
     }
 }
 

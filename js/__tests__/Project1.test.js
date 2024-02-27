@@ -55,9 +55,8 @@ describe('stack node unit tests', () => {
     it('display (one value case)', () => {
         stackNode.top = new nodeClasses.Node(4);
         stackNode.size++;
-        const logSpy = jest.spyOn(global.console, 'log');
-        stackNode.display();
-        expect(logSpy).toHaveBeenLastCalledWith("Stack Elements: 4 ");
+        const actual = stackNode.display();
+        expect(actual).toEqual("Stack Elements: 4 ");
     });
 
     it('display (two values case)', () => {
@@ -65,8 +64,7 @@ describe('stack node unit tests', () => {
         topNode.next = new nodeClasses.Node(10);
         stackNode.top = topNode;
         stackNode.size = 2;
-        const logSpy = jest.spyOn(global.console, 'log');
-        stackNode.display();
-        expect(logSpy).toHaveBeenLastCalledWith("Stack Elements: 4 10 ");
+        const actual = stackNode.display();
+        expect(actual).toEqual("Stack Elements: 4 10 ");
     });
 });
