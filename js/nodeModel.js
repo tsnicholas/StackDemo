@@ -49,21 +49,6 @@ class StackNode {
         }
         return this.top.data;
     }
-
-    display() {
-        if(this.isEmpty()) {
-            console.log("Stack is Empty.");
-            return;
-        }
-        var current = this.top;
-        var output = "Stack Elements: ";
-        while(current !== null) {
-            output = output.concat([`${current.data} `]);
-            current = current.next;
-        }
-        console.log(output);
-        return output;
-    }
 }
 
 module.exports = {Node, StackNode};
