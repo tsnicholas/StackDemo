@@ -25,12 +25,14 @@ $("#clearStackOption").on("click", clearStack);
 $("#clearLogOption").on("click", clearLogs);
 
 document.addEventListener('keydown', function(event) {
-    if(event.altKey && event.ctrlKey && ctrlHotKeyMap.has(event.key)) {
-        ctrlHotKeyMap.get(event.key)();
+    const keyPressed = event.key;
+    if(event.altKey && event.ctrlKey && ctrlHotKeyMap.has(keyPressed)) {
+        ctrlHotKeyMap.get(keyPressed)();
+        return;
     }
 
-    if(event.altKey && altHotKeyMap.has(event.key)) {
-        altHotKeyMap.get(event.key)();
+    if(event.altKey && altHotKeyMap.has(keyPressed)) {
+        altHotKeyMap.get(keyPressed)();
     }
 });
 
