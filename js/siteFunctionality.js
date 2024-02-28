@@ -154,3 +154,12 @@ function translateWebsite(translation) {
         console.error(error);
     }
 }
+
+document.getElementById("boldCheckBox").addEventListener("change", () => {toggleClassOnViews("fw-bold")});
+document.getElementById("italicCheckBox").addEventListener("change", () => {toggleClassOnViews("fst-italic")});
+document.getElementById("underlineCheckBox").addEventListener("change", () => {toggleClassOnViews("text-decoration-underline")})
+
+function toggleClassOnViews(toggledClass) {
+    stackView.toggleClass(toggledClass);
+    logsView.toggleClass(toggledClass);
+}
