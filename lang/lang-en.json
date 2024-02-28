@@ -1,0 +1,34 @@
+{
+    "textContent": {
+        "editDropDownMenu": "Edit",
+        "pushOption": "Push",
+        "popOption": "Pop",
+        "peekOption": "Peek",
+        "sizeOption": "Size",
+        "isEmptyOption": "isEmpty",
+        "clearStackOption": "Clear Stack",
+        "clearLogOption": "Clear Logs",
+        "settingsDropDownMenu": "Settings",
+        "languageSubMenu": "Languages",
+        "fontFaceSubMenu": "Font Face",
+        "fontStyleSubMenu": "Font Style",
+        "fontSizeSubMenu": "Font Size",
+        "tutorialButton": "Tutorial",
+        "contactModalButton": "Contact",
+        "contactModalTitle": "Contact Info",
+        "header": "Stack Demo",
+        "inputLabel": "Add to Stack",
+        "errorText": "This field is required!",
+        "pushButton": "Push",
+        "popButton": "Pop",
+        "peekButton": "Peek",
+        "sizeButton": "Size",
+        "emptyButton": "isEmpty",
+        "stackLabel": "Current Stack",
+        "logsLabel": "Show Logs"
+    },
+    "dataIntro": {
+        "header": "This website is to demo how stack process in a last in, first out manner!",
+        "inputNumber": "Enter a number into the Stack"
+    }
+}

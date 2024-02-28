@@ -1,0 +1,34 @@
+{
+    "textContent": {
+        "editDropDownMenu": "Editar",
+        "pushOption": "Empujar",
+        "popOption": "Estallido",
+        "peekOption": "Vistazo",
+        "sizeOption": "Tamaño",
+        "isEmptyOption": "Esta vacío",
+        "clearStackOption": "Borrar pila",
+        "clearLogOption": "Borrar registros",
+        "settingsDropDownMenu": "Ajustes",
+        "languageSubMenu": "Idiomas",
+        "fontFaceSubMenu": "Perfil delantero",
+        "fontStyleSubMenu": "Estilo de fuente",
+        "fontSizeSubMenu": "Tamaño de fuente",
+        "tutorialButton": "Tutorial",
+        "contactModalButton": "Contacto",
+        "contactModalTitle": "Datos de contacto",
+        "header": "Demostración de pila",
+        "inputLabel": "Agregar a la pila",
+        "errorText": "¡Este campo es obligatorio!",
+        "pushButton": "Empujar",
+        "popButton": "Estallido",
+        "peekButton": "Vistazo",
+        "sizeButton": "Tamaño",
+        "emptyButton": "Esta vacío",
+        "stackLabel": "Pila actual",
+        "logsLabel": "Mostrar registros"
+    },
+    "dataIntro": {
+        "header": "¡Este sitio web es para demostrar cómo se procesa el proceso de pila: el último en entrar, el primero en salir!",
+        "inputNumber": "Ingrese un número en la pila"
+    }
+}

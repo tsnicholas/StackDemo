@@ -78,3 +78,7 @@ textArea {
 .outputField {
     height: 250px
 }
+
+.errorInput {
+    border-color: red;
+}

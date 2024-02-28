@@ -1,7 +1,13 @@
 import $ from "jQuery";
 import { StackNode } from "./nodeModel";
+import enData from "../lang/lang-en.json";
+import cnData from "../lang/lang-cn.json";
+import esData from "../lang/lang-es.json";
 
 const stack = new StackNode();
+const logsView = $("#logs");
+const stackView = $("#stack");
+
 const altHotKeyMap = new Map();
 altHotKeyMap.set("o", popFromStack);
 altHotKeyMap.set("e", peekFromStack);
@@ -11,19 +17,20 @@ const ctrlHotKeyMap = new Map();
 ctrlHotKeyMap.set("c", clearStack);
 ctrlHotKeyMap.set("l", clearLogs);
 
+// Buttons
 $("#pushButton").on("click", pushToStack);
 $("#popButton").on("click", popFromStack);
 $("#peekButton").on("click", peekFromStack);
 $("#sizeButton").on("click", getStackSize);
 $("#emptyButton").on("click", checkIsEmpty);
-
+// Menu Options
 $("#popOption").on("click", popFromStack);
 $("#peekOption").on("click", peekFromStack);
 $("#sizeOption").on("click", getStackSize);
 $("#isEmptyOption").on("click", checkIsEmpty);
 $("#clearStackOption").on("click", clearStack);
 $("#clearLogOption").on("click", clearLogs);
-
+// Hot Keys
 document.addEventListener('keydown', function(event) {
     const keyPressed = event.key;
     if(event.altKey && event.ctrlKey && ctrlHotKeyMap.has(keyPressed)) {
@@ -37,8 +44,15 @@ document.addEventListener('keydown', function(event) {
 });
 
 function pushToStack() {
+    const input = $("#inputNumber").val();
+    const errorText = document.getElementById("errorText");
+    if(input === undefined || input === "") {
+        $("#inputNumber").addClass("errorInput");
+        errorText.hidden = false;
+        return;
+    }
+    errorText.hidden = true;
     try {
-        const input = $("#inputNumber").val();
         log(`Pushing ${input} to stack...`);
         stack.push(Number(input));
         printStack();
@@ -48,15 +62,14 @@ function pushToStack() {
 }
 
 function log(line) {
-    var previousLogs = $("#logs").val();
-    $("#logs").val(`${previousLogs}\n${line}`);
+    var previousLogs = logsView.val();
+    logsView.val(`${previousLogs}\n${line}`);
 }
 
 function printStack() {
-    const stackContainer = $("#stack");
     if(stack.isEmpty()) {
         log("Stack is Empty.");
-        stackContainer.val("");
+        stackView.val("");
         return;
     }
 
@@ -66,7 +79,7 @@ function printStack() {
         output = output.concat([`${current.data} `]);
         current = current.next;
     }
-    stackContainer.val(output);
+    stackView.val(output);
 }
 
 function popFromStack() {
@@ -116,9 +129,28 @@ function clearStack() {
 
 function clearLogs() {
     try {
-        $("#logs").val("");
+        logsView.val("");
     } catch(error) {
         alert(`Error: ${error}`);
     }
 }
 
+document.getElementById("enSetting").addEventListener("click", () => {translateWebsite(enData)});
+document.getElementById("cnSetting").addEventListener("click", () => {translateWebsite(cnData)});
+document.getElementById("esSetting").addEventListener("click", () => {translateWebsite(esData)});
+
+function translateWebsite(translation) {
+    try {
+        Object.entries(translation.textContent).forEach((element) => {
+            const [id, content] = element;
+            console.log(`Id: ${id} Content: ${content}`);
+            document.getElementById(id).textContent = content;
+        });
+        Object.entries(translation.dataIntro).forEach((element) => {
+            const [id, content] = element;
+            document.getElementById(id).setAttribute("data-intro", content);
+        });
+    } catch(error) {
+        console.error(error);
+    }
+}

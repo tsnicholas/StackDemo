@@ -1,0 +1,34 @@
+{
+    "textContent": {
+        "editDropDownMenu": "編輯",
+        "pushOption": "推",
+        "popOption": "流行音樂",
+        "peekOption": "窺視",
+        "sizeOption": "尺寸",
+        "isEmptyOption": "是空的",
+        "clearStackOption": "清除堆疊",
+        "clearLogOption": "清除日誌",
+        "settingsDropDownMenu": "設定",
+        "languageSubMenu": "語言",
+        "fontFaceSubMenu": "字體",
+        "fontStyleSubMenu": "字體樣式",
+        "fontSizeSubMenu": "字體大小",
+        "tutorialButton": "教學",
+        "contactModalButton": "接觸",
+        "contactModalTitle": "联系方式",
+        "header": "堆疊演示",
+        "inputLabel": "新增到堆疊",
+        "errorText": "此字段是必需的！",
+        "pushButton": "推",
+        "popButton": "流行音樂",
+        "peekButton": "窺視",
+        "sizeButton": "尺寸",
+        "emptyButton": "是空的",
+        "stackLabel": "目前堆疊",
+        "logsLabel": "顯示日誌"
+    },
+    "dataIntro": {
+        "header": "這個網站是示範如何以後進先出的方式進行堆疊處理！",
+        "inputNumber": "在堆疊中輸入一個數字"
+    }
+}
