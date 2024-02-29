@@ -1,8 +1,13 @@
+:root {
+  --first-gradient-color: #0b0b0b;
+  --second-gradient-color: #131313;
+}
+
 .introjs-overlay {
   position: absolute;
   box-sizing: content-box;
   z-index: 999999;
-  background-color: #000;
+  background-color: black;
   opacity: 0;
   background: -moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
   background: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.4)),color-stop(100%,rgba(0,0,0,0.9)));
@@ -39,7 +44,7 @@ tr.introjs-showElement > th {
 .introjs-disableInteraction {
   z-index: 99999999 !important;
   position: absolute;
-  background-color: white;
+  background-color: black;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -54,10 +59,10 @@ tr.introjs-showElement > th {
   box-sizing: content-box;
   position: absolute;
   z-index: 9999998;
-  background-color: #FFF;
-  background-color: rgba(255,255,255,.9);
+  background-color: black;
+  background-color: rgba(0,0,0,.9);
   border: 1px solid #777;
-  border: 1px solid rgba(0,0,0,.5);
+  border: 1px solid rgba(255,255,255,.5);
   border-radius: 4px;
   box-shadow: 0 2px 15px rgba(0,0,0,.4);
   -webkit-transition: all 0.3s ease-out;
@@ -101,7 +106,7 @@ tr.introjs-showElement > th {
   font-family: Arial, verdana, tahoma;
   font-size: 13px;
   font-weight: bold;
-  color: white;
+  color: black;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0,0,0,.3);
   background: #ff3019; /* Old browsers */
@@ -114,7 +119,7 @@ tr.introjs-showElement > th {
   width: 20px;
   height:20px;
   line-height: 20px;
-  border: 3px solid white;
+  border: 3px solid black;
   border-radius: 50%;
   filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0)"; /* IE6-9 */
   filter: "progid:DXImageTransform.Microsoft.Shadow(direction=135, strength=2, color=ff0000)"; /* IE10 text shadows */
@@ -122,72 +127,80 @@ tr.introjs-showElement > th {
 }
 
 .introjs-arrow {
-  border: 5px solid white;
+  border: 5px solid black;
   content:'';
   position: absolute;
 }
+
 .introjs-arrow.top {
   top: -10px;
   border-top-color:transparent;
   border-right-color:transparent;
-  border-bottom-color:white;
+  border-bottom-color:black;
   border-left-color:transparent;
 }
+
 .introjs-arrow.top-right {
   top: -10px;
   right: 10px;
-  border-top-color:transparent;
-  border-right-color:transparent;
-  border-bottom-color:white;
-  border-left-color:transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: black;
+  border-left-color: transparent;
 }
+
 .introjs-arrow.top-middle {
   top: -10px;
   left: 50%;
   margin-left: -5px;
-  border-top-color:transparent;
-  border-right-color:transparent;
-  border-bottom-color:white;
-  border-left-color:transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: black;
+  border-left-color: transparent;
 }
+
 .introjs-arrow.right {
   right: -10px;
   top: 10px;
-  border-top-color:transparent;
-  border-right-color:transparent;
-  border-bottom-color:transparent;
-  border-left-color:white;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: black;
 }
+
 .introjs-arrow.right-bottom {
   bottom:10px;
   right: -10px;
-  border-top-color:transparent;
-  border-right-color:transparent;
-  border-bottom-color:transparent;
-  border-left-color:white;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: black;
 }
+
 .introjs-arrow.bottom {
   bottom: -10px;
-  border-top-color:white;
-  border-right-color:transparent;
-  border-bottom-color:transparent;
-  border-left-color:transparent;
+  border-top-color: black;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
+
 .introjs-arrow.left {
   left: -10px;
   top: 10px;
-  border-top-color:transparent;
-  border-right-color:white;
-  border-bottom-color:transparent;
-  border-left-color:transparent;
+  border-top-color: transparent;
+  border-right-color: black;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
+
 .introjs-arrow.left-bottom {
   left: -10px;
   bottom:10px;
-  border-top-color:transparent;
-  border-right-color:white;
-  border-bottom-color:transparent;
-  border-left-color:transparent;
+  border-top-color: transparent;
+  border-right-color: black;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
 
 .introjs-tooltip {
@@ -195,11 +208,11 @@ tr.introjs-showElement > th {
   position: absolute;
   visibility: visible;
   padding: 10px;
-  background-color: white;
+  background-color: black;
   min-width: 200px;
   max-width: 300px;
   border-radius: 3px;
-  box-shadow: 0 1px 10px rgba(0,0,0,.4);
+  box-shadow: 0 1px 10px rgba(255,255,255,.4);
   -webkit-transition: opacity 0.1s ease-out;
      -moz-transition: opacity 0.1s ease-out;
       -ms-transition: opacity 0.1s ease-out;
@@ -222,24 +235,24 @@ tr.introjs-showElement > th {
   overflow: visible;
   display: inline-block;
   padding: 0.3em 0.8em;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #2b2b2b;
   margin: 0;
   text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
+  text-shadow: 1px 1px 0 #000000;
   font: 11px/normal sans-serif;
   color: #333;
   white-space: nowrap;
   cursor: pointer;
   outline: none;
-  background-color: #ececec;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
-  background-image: -moz-linear-gradient(#f4f4f4, #ececec);
-  background-image: -o-linear-gradient(#f4f4f4, #ececec);
-  background-image: linear-gradient(#f4f4f4, #ececec);
+  background-color: var(--second-gradient-color);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--first-gradient-color)), to(var(--second-gradient-color)));
+  background-image: -moz-linear-gradient(var(--first-gradient-color), var(--second-gradient-color));
+  background-image: -o-linear-gradient(var(--first-gradient-color), var(--second-gradient-color));
+  background-image: linear-gradient(var(--first-gradient-color), var(--second-gradient-color));
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
-  /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+  background-clip: padding-box;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
@@ -250,17 +263,17 @@ tr.introjs-showElement > th {
 }
 
 .introjs-button:hover {
-  border-color: #bcbcbc;
+  border-color: #434343;
   text-decoration: none;
-  box-shadow: 0px 1px 1px #e3e3e3;
+  box-shadow: 0px 1px 1px #1c1c1c;
 }
 
 .introjs-button:focus,
 .introjs-button:active {
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ececec), to(#f4f4f4));
-  background-image: -moz-linear-gradient(#ececec, #f4f4f4);
-  background-image: -o-linear-gradient(#ececec, #f4f4f4);
-  background-image: linear-gradient(#ececec, #f4f4f4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(var(--second-gradient-color)), to(var(--first-gradient-color)));
+  background-image: -moz-linear-gradient(var(--second-gradient-color), var(--first-gradient-color));
+  background-image: -o-linear-gradient(var(--second-gradient-color), var(--first-gradient-color));
+  background-image: linear-gradient(var(--second-gradient-color), var(--first-gradient-color));
 }
 
 /* overrides extra padding on button elements in Firefox */
@@ -272,7 +285,7 @@ tr.introjs-showElement > th {
 .introjs-skipbutton {
   box-sizing: content-box;
   margin-right: 5px;
-  color: #7a7a7a;
+  color: white;
 }
 
 .introjs-prevbutton {
@@ -280,44 +293,49 @@ tr.introjs-showElement > th {
   -moz-border-radius: 0.2em 0 0 0.2em;
   border-radius: 0.2em 0 0 0.2em;
   border-right: none;
+  color: white;
 }
 
 .introjs-prevbutton.introjs-fullbutton {
-  border: 1px solid #d4d4d4;
+  border: 1px solid #2b2b2b;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
+  color: white;
 }
 
 .introjs-nextbutton {
   -webkit-border-radius: 0 0.2em 0.2em 0;
   -moz-border-radius: 0 0.2em 0.2em 0;
   border-radius: 0 0.2em 0.2em 0;
+  color: white;
 }
 
 .introjs-nextbutton.introjs-fullbutton {
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
+  color: white;
 }
 
 .introjs-disabled, .introjs-disabled:hover, .introjs-disabled:focus {
-  color: #9a9a9a;
-  border-color: #d4d4d4;
+  color: #656565;
+  border-color: #2b2b2b;
   box-shadow: none;
   cursor: default;
-  background-color: #f4f4f4;
+  background-color: var(--first-gradient-color);
   background-image: none;
   text-decoration: none;
 }
 
 .introjs-hidden {
-     display: none;
+  display: none;
 }
 
 .introjs-bullets {
   text-align: center;
 }
+
 .introjs-bullets ul {
   box-sizing: content-box;
   clear: both;
@@ -325,29 +343,33 @@ tr.introjs-showElement > th {
   padding: 0;
   display: inline-block;
 }
+
 .introjs-bullets ul li {
   box-sizing: content-box;
   list-style: none;
   float: left;
   margin: 0 2px;
 }
+
 .introjs-bullets ul li a {
   box-sizing: content-box;
   display: block;
   width: 6px;
   height: 6px;
-  background: #ccc;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
+  background: #333333;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
 }
+
 .introjs-bullets ul li a:hover {
-  background: #999;
+  background: #666;
 }
+
 .introjs-bullets ul li a.active {
-  background: #999;
+  background: #666;
 }
 
 .introjs-progress {
@@ -356,8 +378,9 @@ tr.introjs-showElement > th {
   height: 10px;
   margin: 10px 0 5px 0;
   border-radius: 4px;
-  background-color: #ecf0f1
+  background-color: #130f0e
 }
+
 .introjs-progressbar {
   box-sizing: content-box;
   float: left;
@@ -366,7 +389,7 @@ tr.introjs-showElement > th {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  background-color: #08c;
+  background-color: #004acc;
 }
 
 .introjsFloatingElement {
@@ -389,10 +412,12 @@ tr.introjs-showElement > th {
   height: 15px;
   cursor: pointer;
 }
+
 .introjs-hint:focus {
     border: 0;
     outline: 0;
 }
+
 .introjs-hidehint {
   display: none;
 }
@@ -402,18 +427,18 @@ tr.introjs-showElement > th {
 }
 
 .introjs-hint:hover > .introjs-hint-pulse {
-  border: 5px solid rgba(60, 60, 60, 0.57);
+  border: 5px solid rgba(195, 195, 195, 0.57);
 }
 
 .introjs-hint-pulse {
   box-sizing: content-box;
   width: 10px;
   height: 10px;
-  border: 5px solid rgba(60, 60, 60, 0.27);
+  border: 5px solid rgba(195, 195, 195, 0.27);
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  background-color: rgba(136, 136, 136, 0.24);
+  background-color: rgba(119, 119, 119, 0.24);
   z-index: 10;
   position: absolute;
   -webkit-transition: all 0.2s ease-out;
@@ -422,14 +447,16 @@ tr.introjs-showElement > th {
        -o-transition: all 0.2s ease-out;
           transition: all 0.2s ease-out;
 }
+
 .introjs-hint-no-anim .introjs-hint-dot {
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
 }
+
 .introjs-hint-dot {
   box-sizing: content-box;
-  border: 10px solid rgba(146, 146, 146, 0.36);
+  border: 10px solid rgba(109, 109, 109, 0.36);
   background: transparent;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
@@ -449,48 +476,71 @@ tr.introjs-showElement > th {
   opacity: 0;
 }
 
+@keyframes introjspulse {
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+  }
+  25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+  }
+  50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+  }
+  75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+  }
+}
+
 @-moz-keyframes introjspulse {
  0% {
     -moz-transform: scale(0);
     opacity: 0.0;
- }
- 25% {
+  }
+  25% {
     -moz-transform: scale(0);
     opacity: 0.1;
- }
- 50% {
+  }
+  50% {
     -moz-transform: scale(0.1);
     opacity: 0.3;
- }
- 75% {
+  }
+  75% {
     -moz-transform: scale(0.5);
     opacity: 0.5;
- }
- 100% {
+  }
+  100% {
     -moz-transform: scale(1);
     opacity: 0.0;
- }
+  }
 }
 
 @-webkit-keyframes introjspulse {
- 0% {
+  0% {
     -webkit-transform: scale(0);
     opacity: 0.0;
- }
- 25% {
+  }
+  25% {
     -webkit-transform: scale(0);
     opacity: 0.1;
- }
- 50% {
+  }
+  50% {
     -webkit-transform: scale(0.1);
     opacity: 0.3;
- }
- 75% {
+  }
+  75% {
     -webkit-transform: scale(0.5);
     opacity: 0.5;
- }
- 100% {
+  }
+  100% {
     -webkit-transform: scale(1);
     opacity: 0.0;
- }
+  }
 }

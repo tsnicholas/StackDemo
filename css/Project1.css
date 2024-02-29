@@ -1,15 +1,37 @@
+:root {
+    --default-bg-color: #181a1b;
+    --default-border-color: #383D3F;
+    --default-text-color: white;
+    --default-text-hover-color: #afbdbb;
+}
+
+body {
+    background-color: var(--default-bg-color);
+    color: var(--default-text-color);
+}
+
+.list-group-item {
+    color: var(--default-text-color);
+    background-color: var(--default-bg-color);
+    border-color: var(--default-border-color);
+}
+
 .actionBar li {
     padding-top: 20px;
+    background-color: var(--default-bg-color);
+    border-color: var(--default-border-color);
 }
 
 .actionBar li label {
     font-size: 20px; 
-    color: red;
+    color: var(--default-text-color);
 }
 
 .actionBar li input {
     font-size: 20px; 
-    color: red;
+    color: #6f6b6a;
+    background-color: #2b2a33;
+    border-color: var(--default-border-color);
 }
 
 .actionBar li button {
@@ -27,8 +49,36 @@ textArea {
     margin-top: 20px;
 }
 
+.nav-link, .nav-link:focus, .nav-link:active {
+    color: var(--default-text-color);
+}
+
+.nav-link:hover {
+    color: var(--default-text-hover-color);
+}
+
+.dropdown-menu {
+    background-color: var(--default-bg-color);
+    border-color: var(--default-border-color);
+    color: var(--default-text-color);
+}
+
 .dropdown-submenu {
     position: relative;
+    color: var(--default-text-color);
+}
+
+.dropdown-item {
+    color: var(--default-text-color);
+}
+
+.dropdown-divider {
+    border-color: var(--default-border-color);
+}
+
+.dropdown-item:hover {
+    color: var(--default-text-hover-color);
+    background-color: #1b1e1f;
 }
 
 .dropdown-submenu > .dropdown-menu {
@@ -42,6 +92,7 @@ textArea {
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
+    color: var(--default-text-hover-color);
     display: block;
 }
 
@@ -51,10 +102,8 @@ textArea {
     float: right;
     width: 0;
     height: 0;
-    border-color: transparent;
     border-style: solid;
     border-width: 5px 0 5px 5px;
-    border-left-color: #cccccc;
     margin-top: 5px;
     margin-right: -10px;
 }
@@ -75,7 +124,23 @@ textArea {
     border-radius: 6px 0 6px 6px;
 }
 
-.outputField {
-    height: 250px
+input[type="checkbox"] {
+    background-color: var(--default-bg-color);
+    border-color: var(--default-border-color);
 }
 
+.modal-content {
+    background-color: var(--default-bg-color);
+    border-color: var(--default-border-color);
+    color: var(--default-text-color);
+}
+
+.modal-header {
+    border-bottom-color: var(--default-border-color);
+}
+
+.outputField {
+    height: 250px;
+    background-color: #222128;
+    border-color: #55555e;
+}
