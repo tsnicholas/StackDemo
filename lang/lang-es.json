@@ -1,6 +1,7 @@
 {
     "textContent": {
         "editDropDownMenu": "Editar",
+        "pushOptionLabel": "Empujar",
         "popOptionLabel": "Estallido",
         "peekOptionLabel": "Vistazo",
         "sizeOptionLabel": "Tamaño",

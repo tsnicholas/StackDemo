@@ -5,7 +5,7 @@
 - Webpack (for importing jQuery)
 - jQuery
 
-## How to Launch
+## How to Launch if Project1.js is missing
 
 1. Make sure to cd to the root directory with your command line of choice
 2. Run `npm install` to install node_modules

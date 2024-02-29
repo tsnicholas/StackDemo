@@ -15,6 +15,12 @@
             Edit
           </a>
           <div class="dropdown-menu" aria-labelledby="editDropDownMenu">
+            <a id="pushOption" class="dropdown-item" href="#">
+              <div class="row">
+                <p id="popOptionLabel" class="col-6">Push</p>
+                <p id="popHotKeys" class="col-4 fs-6 text-secondary">alt+p</p>
+              </div>
+            </a>
             <a id="popOption" class="dropdown-item" href="#">
               <div class="row">
                 <p id="popOptionLabel" class="col-6">Pop</p>
@@ -41,14 +47,14 @@
             </a>
             <div class="dropdown-divider"></div>
             <a id="clearStackOption" class="dropdown-item" href="#">
-              <div class="">
-                <p id="clearStackOptionLabel" class="">Clear Stack</p>
+              <div>
+                <p id="clearStackOptionLabel">Clear Stack</p>
                 <p id="clearStackHotKeys" class="fs-6 text-secondary text-end">ctrl+alt+c</p>
               </div>
             </a>
             <a id="clearLogOption" class="dropdown-item" href="#">
-              <div class="">
-                <p id="clearLogOptionLabel" class="">Clear Logs</p>
+              <div>
+                <p id="clearLogOptionLabel">Clear Logs</p>
                 <p id="clearLogHotKeys" class="fs-6 text-secondary text-end">ctrl+alt+l</p>
               </div>
             </a>
@@ -84,17 +90,17 @@
                 Font Style
               </a>
               <div class="dropdown-menu" aria-labelledby="fontStyleSubMenu">
-                <div class="form-check">
+                <div class="form-check mx-3">
                   <input class="form-check-input" type="checkbox" id="boldCheckBox">
-                  <label id="boldLabel" class="form-check-label" for="boldCheckBox">Bold</label>
+                  <label id="boldLabel" class="form-check-label text-light" for="boldCheckBox">Bold</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check mx-3">
                   <input class="form-check-input" type="checkbox" id="italicCheckBox">
-                  <label id="italicLabel" class="form-check-label" for="italicCheckBox">Italic</label>
+                  <label id="italicLabel" class="form-check-label text-light" for="italicCheckBox">Italic</label>
                 </div>
-                <div class="form-check">
+                <div class="form-check mx-3">
                   <input class="form-check-input" type="checkbox" id="underlineCheckBox">
-                  <label id="underlineLabel" class="form-check-label" for="underlineCheckBox">Underline</label>
+                  <label id="underlineLabel" class="form-check-label text-light" for="underlineCheckBox">Underline</label>
                 </div>
               </div> 
             </div>
@@ -124,12 +130,12 @@
             <h1 class="modal-title fs-5" id="contactModalTitle">Contact Info</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body ">
+          <div class="modal-body">
             <div class="row">
               <div class="col-6">
                 <img class="img-fluid" src="img/Professional Mugshot.jpg" alt="Portrait">
               </div>
-              <div class="col-6">
+              <div class="col-6 fs-4">
                 <p>Tim Nicholas</p>
                 <p>tsnicholas@bsu.edu</p>
                 <p>(317) 993-8411</p>

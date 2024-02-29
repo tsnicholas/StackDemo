@@ -9,6 +9,7 @@ const logsView = $("#logs");
 const stackView = $("#stack");
 
 const altHotKeyMap = new Map();
+altHotKeyMap.set("p", pushToStack);
 altHotKeyMap.set("o", popFromStack);
 altHotKeyMap.set("e", peekFromStack);
 altHotKeyMap.set("s", getStackSize);
@@ -24,6 +25,7 @@ $("#peekButton").on("click", peekFromStack);
 $("#sizeButton").on("click", getStackSize);
 $("#emptyButton").on("click", checkIsEmpty);
 // Menu Options
+$("#pushOption").on("click", pushToStack);
 $("#popOption").on("click", popFromStack);
 $("#peekOption").on("click", peekFromStack);
 $("#sizeOption").on("click", getStackSize);

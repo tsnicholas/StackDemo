@@ -1,6 +1,7 @@
 {
     "textContent": {
         "editDropDownMenu": "Edit",
+        "pushOptionLabel": "Push",
         "popOptionLabel": "Pop",
         "peekOptionLabel": "Peek",
         "sizeOptionLabel": "Size",
