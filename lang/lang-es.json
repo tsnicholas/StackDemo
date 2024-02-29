@@ -10,8 +10,14 @@
         "clearLogOption": "Borrar registros",
         "settingsDropDownMenu": "Ajustes",
         "languageSubMenu": "Idiomas",
+        "enSetting": "Inglés",
+        "cnSetting": "Chino",
+        "esSetting": "Español",
         "fontFaceSubMenu": "Perfil delantero",
         "fontStyleSubMenu": "Estilo de fuente",
+        "boldLabel": "Negrito",
+        "italicLabel": "Itálico",
+        "underlineLabel": "Subrayar",
         "fontSizeSubMenu": "Tamaño de fuente",
         "tutorialButton": "Tutorial",
         "contactModalButton": "Contacto",
@@ -30,5 +36,8 @@
     "dataIntro": {
         "header": "¡Este sitio web es para demostrar cómo se procesa el proceso de pila: el último en entrar, el primero en salir!",
         "inputNumber": "Ingrese un número en la pila"
+    },
+    "placeholder": {
+        "inputNumber": "Ingrese un numero"
     }
 }

@@ -10,8 +10,14 @@
         "clearLogOption": "Clear Logs",
         "settingsDropDownMenu": "Settings",
         "languageSubMenu": "Languages",
+        "enSetting": "English",
+        "cnSetting": "Chinese",
+        "esSetting": "Spanish",
         "fontFaceSubMenu": "Font Face",
         "fontStyleSubMenu": "Font Style",
+        "boldLabel": "Bold",
+        "italicLabel": "Italic",
+        "underlineLabel": "Underline",
         "fontSizeSubMenu": "Font Size",
         "tutorialButton": "Tutorial",
         "contactModalButton": "Contact",
@@ -30,5 +36,8 @@
     "dataIntro": {
         "header": "This website is to demo how stack process in a last in, first out manner!",
         "inputNumber": "Enter a number into the Stack"
+    },
+    "placeholder": {
+        "inputNumber": "Enter a number"
     }
 }

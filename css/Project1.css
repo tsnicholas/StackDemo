@@ -9,7 +9,7 @@
 
 .actionBar li input {
     font-size: 20px; 
-    color: blue;
+    color: red;
 }
 
 .actionBar li button {
@@ -79,6 +79,3 @@ textArea {
     height: 250px
 }
 
-.errorInput {
-    border-color: red;
-}

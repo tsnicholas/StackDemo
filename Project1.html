@@ -57,15 +57,15 @@
               <div class="dropdown-menu" aria-labelledby="fontStyleSubMenu">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="boldCheckBox">
-                  <label class="form-check-label" for="boldCheckBox">Bold</label>
+                  <label id="boldLabel" class="form-check-label" for="boldCheckBox">Bold</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="italicCheckBox">
-                  <label class="form-check-label" for="italicCheckBox">Italic</label>
+                  <label id="italicLabel" class="form-check-label" for="italicCheckBox">Italic</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="underlineCheckBox">
-                  <label class="form-check-label" for="underlineCheckBox">Underline</label>
+                  <label id="underlineLabel" class="form-check-label" for="underlineCheckBox">Underline</label>
                 </div>
               </div> 
             </div>
@@ -74,8 +74,8 @@
                 Font Size
               </a>
               <div class="dropdown-menu" aria-labelledby="fontSizeSubMenu">
-                <a class="dropdown-item" href="#">+2</a>
-                <a class="dropdown-item" href="#">-2</a>
+                <a id="increaseFontSize" class="dropdown-item" href="#">+2</a>
+                <a id="decreaseFontSize" class="dropdown-item" href="#">-2</a>
               </div>
             </div>
           </div>
@@ -146,13 +146,13 @@
                 <label id="stackLabel" for="stack">Current Stack</label>
               </li>
               <li class="list-group-item">
-                <textarea id="stack" class="outputField mx-auto gap-2 col-12" disabled></textarea>
+                <textarea id="stack" class="outputField mx-auto gap-2 col-12 fs-3" disabled></textarea>
               </li>
               <li class="list-group-item">
                 <label id="logsLabel" for="logs">Show Logs</label>
               </li>
               <li class="list-group-item">
-                <textarea id="logs" class="outputField mx-auto gap-2 col-12" disabled></textarea>
+                <textarea id="logs" class="outputField mx-auto gap-2 col-12 fs-3" disabled></textarea>
               </li>
             </ul>
           </div>

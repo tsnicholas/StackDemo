@@ -10,8 +10,14 @@
         "clearLogOption": "清除日誌",
         "settingsDropDownMenu": "設定",
         "languageSubMenu": "語言",
+        "enSetting": "英語",
+        "cnSetting": "中國",
+        "esSetting": "西班牙語",
         "fontFaceSubMenu": "字體",
         "fontStyleSubMenu": "字體樣式",
+        "boldLabel": "大膽的",
+        "italicLabel": "斜體",
+        "underlineLabel": "強調",
         "fontSizeSubMenu": "字體大小",
         "tutorialButton": "教學",
         "contactModalButton": "接觸",
@@ -30,5 +36,8 @@
     "dataIntro": {
         "header": "這個網站是示範如何以後進先出的方式進行堆疊處理！",
         "inputNumber": "在堆疊中輸入一個數字"
+    },
+    "placeholder": {
+        "inputNumber": "输入一个数字"
     }
 }

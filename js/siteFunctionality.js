@@ -150,6 +150,10 @@ function translateWebsite(translation) {
             const [id, content] = element;
             document.getElementById(id).setAttribute("data-intro", content);
         });
+        Object.entries(translation.placeholder).forEach((element) => {
+            const [id, content] = element;
+            document.getElementById(id).setAttribute("placeholder", content);
+        });
     } catch(error) {
         console.error(error);
     }
@@ -163,3 +167,7 @@ function toggleClassOnViews(toggledClass) {
     stackView.toggleClass(toggledClass);
     logsView.toggleClass(toggledClass);
 }
+
+document.getElementById("arial").addEventListener("click", () => {document.body.style.fontFamily = "Arial"});
+document.getElementById("timesNewRoman").addEventListener("click", () => {document.body.style.fontFamily = "Times New Roman"});
+document.getElementById("calibri").addEventListener("click", () => {document.body.style.fontFamily = "Calibri"})
