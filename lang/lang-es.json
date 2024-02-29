@@ -35,7 +35,14 @@
     },
     "dataIntro": {
         "header": "¡Este sitio web es para demostrar cómo se procesa el proceso de pila: el último en entrar, el primero en salir!",
-        "inputNumber": "Ingrese un número en la pila"
+        "inputNumber": "Ingrese un número en la pila",
+        "pushButton": "Este botón empujará el número que ingreses a la parte superior de la pila.",
+        "popButton": "Este botón sacará el número superior de la pila.",
+        "peekButton": "Este botón mostrará el número superior de la pila.",
+        "sizeButton": "Este botón mostrará el tamaño de la pila en los registros.",
+        "emptyButton": "Este botón mostrará si la pila está vacía o no en los registros.",
+        "stack": "Aquí es donde se mostrará la pila.",
+        "logs": "Aquí es donde se mostrarán los registros relacionados con la pila."
     },
     "placeholder": {
         "inputNumber": "Ingrese un numero"

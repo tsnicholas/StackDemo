@@ -35,7 +35,14 @@
     },
     "dataIntro": {
         "header": "This website is to demo how stack process in a last in, first out manner!",
-        "inputNumber": "Enter a number into the Stack"
+        "inputNumber": "Enter a number into the Stack",
+        "pushButton": "This button will push the number you enter unto the top of the stack.",
+        "popButton": "This button will pop the top number from the stack.",
+        "peekButton": "This button will peek at the top number from the stack.",
+        "sizeButton": "This button will display the size of the stack in the logs.",
+        "emptyButton": "This button will display whether the stack is empty or not in the logs.",
+        "stack": "This is where the stack will be displayed.",
+        "logs": "This is where logs related to the stack will be displayed."
     },
     "placeholder": {
         "inputNumber": "Enter a number"

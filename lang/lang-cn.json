@@ -35,7 +35,14 @@
     },
     "dataIntro": {
         "header": "這個網站是示範如何以後進先出的方式進行堆疊處理！",
-        "inputNumber": "在堆疊中輸入一個數字"
+        "inputNumber": "在堆疊中輸入一個數字。",
+        "pushButton": "此按钮会将您输入的数字推到堆栈的顶部。",
+        "popButton": "此按钮将从堆栈中弹出顶部数字。",
+        "peekButton": "此按钮将查看堆栈中的顶部数字。",
+        "sizeButton": "此按钮将显示日志中堆栈的大小。",
+        "emptyButton": "该按钮将在日志中显示堆栈是否为空。",
+        "stack": "这是堆栈将显示的位置。",
+        "logs": "这是显示与堆栈相关的日志的地方。"
     },
     "placeholder": {
         "inputNumber": "输入一个数字"
