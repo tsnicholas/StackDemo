@@ -15,14 +15,43 @@
             Edit
           </a>
           <div class="dropdown-menu" aria-labelledby="editDropDownMenu">
-            <a id="pushOption" class="dropdown-item" href="#">Push</a>
-            <a id="popOption" class="dropdown-item" href="#">Pop</a>
-            <a id="peekOption" class="dropdown-item" href="#">Peek</a>
-            <a id="sizeOption" class="dropdown-item" href="#">Size</a>
-            <a id="isEmptyOption" class="dropdown-item" href="#">isEmpty</a>
+            <a id="popOption" class="dropdown-item" href="#">
+              <div class="row">
+                <p id="popOptionLabel" class="col-6">Pop</p>
+                <p id="popHotKeys" class="col-4 fs-6 text-secondary">alt+o</p>
+              </div>
+            </a>
+            <a id="peekOption" class="dropdown-item" href="#">
+              <div class="row">
+                <p id="peekOptionLabel" class="col-6">Peek</p>
+                <p id="peekHotKeys" class="col-4 fs-6 text-secondary">alt+e</p>
+              </div>
+            </a>
+            <a id="sizeOption" class="dropdown-item" href="#">
+              <div class="row">
+                <p id="sizeOptionLabel" class="col-6">Size</p>
+                <p id="sizeHotKeys" class="col-4 fs-6 text-secondary">alt+s</p>
+              </div>
+            </a>
+            <a id="isEmptyOption" class="dropdown-item" href="#">
+              <div class="row">
+                <p id="isEmptyOptionLabel" class="col-6">isEmpty</p>
+                <p id="isEmptyHotKeys" class="col-4 fs-6 text-secondary">alt+m</p>
+              </div>
+            </a>
             <div class="dropdown-divider"></div>
-            <a id="clearStackOption" class="dropdown-item" href="#">Clear Stack</a>
-            <a id="clearLogOption" class="dropdown-item" href="#">Clear Log</a>
+            <a id="clearStackOption" class="dropdown-item" href="#">
+              <div class="">
+                <p id="clearStackOptionLabel" class="">Clear Stack</p>
+                <p id="clearStackHotKeys" class="fs-6 text-secondary text-end">ctrl+alt+c</p>
+              </div>
+            </a>
+            <a id="clearLogOption" class="dropdown-item" href="#">
+              <div class="">
+                <p id="clearLogOptionLabel" class="">Clear Logs</p>
+                <p id="clearLogHotKeys" class="fs-6 text-secondary text-end">ctrl+alt+l</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="navbar-nav nav-item dropdown">
@@ -46,7 +75,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="fontFaceSubMenu">
                 <a id="arial" class="dropdown-item" href="#">Arial</a>
-                <a id="timesNewRoman" class="dropdown-item" href="#">TimesNewRoman</a>
+                <a id="timesNewRoman" class="dropdown-item" href="#">Times New Roman</a>
                 <a id="calibri" class="dropdown-item" href="#">Calibri</a>
               </div>
             </div>
