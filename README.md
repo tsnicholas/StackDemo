@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-- Webpack (for importing jQuery)
+- Webpack (for importing jQuery and to get around CORS when testing)
 - jQuery
 
 ## How to Launch if Project1.js is missing

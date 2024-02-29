@@ -8,137 +8,164 @@
     <title>CS445 Project1</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg mx-3">
+    <nav class="navbar navbar-expand-sm mx-3 navbar-dark">
       <div class="container-sm">
-        <div class="navbar-nav nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="editDropDownMenu" data-bs-toggle="dropdown" aria-haspopup>
-            Edit
-          </a>
-          <div class="dropdown-menu" aria-labelledby="editDropDownMenu">
-            <a id="pushOption" class="dropdown-item" href="#">
-              <div class="row">
-                <p id="popOptionLabel" class="col-6">Push</p>
-                <p id="popHotKeys" class="col-4 fs-6 text-secondary">alt+p</p>
-              </div>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#fullNavBar" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container-sm" id="fullNavBar">
+          <div class="navbar-nav nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="editDropDownMenu" data-bs-toggle="dropdown" aria-haspopup>
+              Edit
             </a>
-            <a id="popOption" class="dropdown-item" href="#">
-              <div class="row">
-                <p id="popOptionLabel" class="col-6">Pop</p>
-                <p id="popHotKeys" class="col-4 fs-6 text-secondary">alt+o</p>
-              </div>
+            <ul class="dropdown-menu" aria-labelledby="editDropDownMenu">
+              <li>
+                <a id="pushOption" class="dropdown-item" href="#">
+                  <div class="row">
+                    <p id="pushOptionLabel" class="col-6 fs-6 fs-sm-7">Push</p>
+                    <p id="pushHotKeys" class="col-4 fs-6 fs-sm-7 text-secondary">alt+p</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a id="popOption" class="dropdown-item" href="#">
+                  <div class="row">
+                    <p id="popOptionLabel" class="col-6 fs-6 fs-sm-7">Pop</p>
+                    <p id="popHotKeys" class="col-4 fs-6 fs-sm-7 text-secondary">alt+o</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a id="peekOption" class="dropdown-item" href="#">
+                  <div class="row">
+                    <p id="peekOptionLabel" class="col-6 fs-6 fs-sm-7">Peek</p>
+                    <p id="peekHotKeys" class="col-4 fs-6 fs-sm-7 text-secondary">alt+e</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a id="sizeOption" class="dropdown-item" href="#">
+                  <div class="row">
+                    <p id="sizeOptionLabel" class="col-6 fs-6 fs-sm-7">Size</p>
+                    <p id="sizeHotKeys" class="col-4 fs-6 fs-sm-7 text-secondary">alt+s</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a id="isEmptyOption" class="dropdown-item" href="#">
+                  <div class="row">
+                    <p id="isEmptyOptionLabel" class="col-6 fs-6 fs-sm-7">isEmpty</p>
+                    <p id="isEmptyHotKeys" class="col-4 fs-6 fs-sm-7 text-secondary">alt+m</p>
+                  </div>
+                </a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <a id="clearStackOption" class="dropdown-item" href="#">
+                  <div>
+                    <p id="clearStackOptionLabel" class="fs-6 fs-sm-7">Clear Stack</p>
+                    <p id="clearStackHotKeys" class="fs-6 fs-sm-7 text-secondary text-end">ctrl+alt+c</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a id="clearLogOption" class="dropdown-item" href="#">
+                  <div>
+                    <p id="clearLogOptionLabel" class="fs-6 fs-sm-7">Clear Logs</p>
+                    <p id="clearLogHotKeys" class="fs-6 fs-sm-7 text-secondary text-end">ctrl+alt+l</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-nav nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="settingsDropDownMenu" data-bs-toggle="dropdown" aria-haspopup>
+              Settings
             </a>
-            <a id="peekOption" class="dropdown-item" href="#">
-              <div class="row">
-                <p id="peekOptionLabel" class="col-6">Peek</p>
-                <p id="peekHotKeys" class="col-4 fs-6 text-secondary">alt+e</p>
-              </div>
-            </a>
-            <a id="sizeOption" class="dropdown-item" href="#">
-              <div class="row">
-                <p id="sizeOptionLabel" class="col-6">Size</p>
-                <p id="sizeHotKeys" class="col-4 fs-6 text-secondary">alt+s</p>
-              </div>
-            </a>
-            <a id="isEmptyOption" class="dropdown-item" href="#">
-              <div class="row">
-                <p id="isEmptyOptionLabel" class="col-6">isEmpty</p>
-                <p id="isEmptyHotKeys" class="col-4 fs-6 text-secondary">alt+m</p>
-              </div>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a id="clearStackOption" class="dropdown-item" href="#">
-              <div>
-                <p id="clearStackOptionLabel">Clear Stack</p>
-                <p id="clearStackHotKeys" class="fs-6 text-secondary text-end">ctrl+alt+c</p>
-              </div>
-            </a>
-            <a id="clearLogOption" class="dropdown-item" href="#">
-              <div>
-                <p id="clearLogOptionLabel">Clear Logs</p>
-                <p id="clearLogHotKeys" class="fs-6 text-secondary text-end">ctrl+alt+l</p>
-              </div>
-            </a>
+            <ul class="dropdown-menu" aria-labelledby="settingsDropDownMenu">
+              <li>
+                <div class="nav-item dropend dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="languageSubMenu" data-bs-toggle="dropdown">
+                    Languages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="languageSubMenu">
+                    <a id="enSetting" class="dropdown-item" href="#">English</a>
+                    <a id="cnSetting" class="dropdown-item" href="#">Chinese</a>
+                    <a id="esSetting" class="dropdown-item" href="#">Spanish</a>
+                  </div> 
+                </div>
+              </li>
+              <li>
+                <div class="nav-item dropend dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="fontFaceSubMenu" data-bs-toggle="dropdown">
+                    Font Face
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="fontFaceSubMenu">
+                    <a id="arial" class="dropdown-item" href="#">Arial</a>
+                    <a id="timesNewRoman" class="dropdown-item" href="#">Times New Roman</a>
+                    <a id="calibri" class="dropdown-item" href="#">Calibri</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="nav-item dropend dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="fontStyleSubMenu" data-bs-toggle="dropdown">
+                    Font Style
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="fontStyleSubMenu">
+                    <div class="form-check mx-3">
+                      <input class="form-check-input" type="checkbox" id="boldCheckBox">
+                      <label id="boldLabel" class="form-check-label text-light" for="boldCheckBox">Bold</label>
+                    </div>
+                    <div class="form-check mx-3">
+                      <input class="form-check-input" type="checkbox" id="italicCheckBox">
+                      <label id="italicLabel" class="form-check-label text-light" for="italicCheckBox">Italic</label>
+                    </div>
+                    <div class="form-check mx-3">
+                      <input class="form-check-input" type="checkbox" id="underlineCheckBox">
+                      <label id="underlineLabel" class="form-check-label text-light" for="underlineCheckBox">Underline</label>
+                    </div>
+                  </div> 
+                </div>
+              </li>
+              <li>
+                <div class="nav-item dropend dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="fontSizeSubMenu" data-bs-toggle="dropdown">
+                    Font Size
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="fontSizeSubMenu">
+                    <a id="increaseFontSize" class="dropdown-item" href="#">+2</a>
+                    <a id="decreaseFontSize" class="dropdown-item" href="#">-2</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-nav nav-item">
+            <a id="tutorialButton" class="nav-link" onclick="introJs().start()" data-localize="menuBar.tutorial" href="#">Tutorial</a>
+          </div>
+          <div class="navbar-nav nav-item">
+            <a id="contactModalButton" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
           </div>
         </div>
-        <div class="navbar-nav nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="settingsDropDownMenu" data-bs-toggle="dropdown" aria-haspopup>
-            Settings
-          </a>
-          <div class="dropdown-menu" aria-labelledby="settingsDropDownMenu">
-            <div class="nav-item dropend dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#" id="languageSubMenu" data-bs-toggle="dropdown">
-                Languages
-              </a>
-              <div class="dropdown-menu" aria-labelledby="languageSubMenu">
-                <a id="enSetting" class="dropdown-item" href="#">English</a>
-                <a id="cnSetting" class="dropdown-item" href="#">Chinese</a>
-                <a id="esSetting" class="dropdown-item" href="#">Spanish</a>
-              </div> 
+      </nav>
+      <div class="modal fade" id="contactModal" aria-labelledby="contactModalTitle" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="contactModalTitle">Contact Info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="nav-item dropend dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#" id="fontFaceSubMenu" data-bs-toggle="dropdown">
-                Font Face
-              </a>
-              <div class="dropdown-menu" aria-labelledby="fontFaceSubMenu">
-                <a id="arial" class="dropdown-item" href="#">Arial</a>
-                <a id="timesNewRoman" class="dropdown-item" href="#">Times New Roman</a>
-                <a id="calibri" class="dropdown-item" href="#">Calibri</a>
-              </div>
-            </div>
-            <div class="nav-item dropend dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#" id="fontStyleSubMenu" data-bs-toggle="dropdown">
-                Font Style
-              </a>
-              <div class="dropdown-menu" aria-labelledby="fontStyleSubMenu">
-                <div class="form-check mx-3">
-                  <input class="form-check-input" type="checkbox" id="boldCheckBox">
-                  <label id="boldLabel" class="form-check-label text-light" for="boldCheckBox">Bold</label>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-6">
+                  <img class="img-fluid" src="img/Professional Mugshot.jpg" alt="Portrait">
                 </div>
-                <div class="form-check mx-3">
-                  <input class="form-check-input" type="checkbox" id="italicCheckBox">
-                  <label id="italicLabel" class="form-check-label text-light" for="italicCheckBox">Italic</label>
+                <div class="col-6">
+                  <p class="fs-4 fs-sm-5 fs-xs-6">Tim Nicholas</p>
+                  <p class="fs-6 fs-sm-7">tsnicholas@bsu.edu</p>
+                  <p class="fs-4 fs-sm-5 fs-xs-6">(317) 993-8411</p>
                 </div>
-                <div class="form-check mx-3">
-                  <input class="form-check-input" type="checkbox" id="underlineCheckBox">
-                  <label id="underlineLabel" class="form-check-label text-light" for="underlineCheckBox">Underline</label>
-                </div>
-              </div> 
-            </div>
-            <div class="nav-item dropend dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#" id="fontSizeSubMenu" data-bs-toggle="dropdown">
-                Font Size
-              </a>
-              <div class="dropdown-menu" aria-labelledby="fontSizeSubMenu">
-                <a id="increaseFontSize" class="dropdown-item" href="#">+2</a>
-                <a id="decreaseFontSize" class="dropdown-item" href="#">-2</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbar-nav nav-item">
-          <a id="tutorialButton" class="nav-link" onclick="introJs().start()" data-localize="menuBar.tutorial" href="#">Tutorial</a>
-        </div>
-        <div class="navbar-nav nav-item">
-          <a id="contactModalButton" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
-        </div>
-      </div>
-    </nav>
-    <div class="modal fade" id="contactModal" aria-labelledby="contactModalTitle" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="contactModalTitle">Contact Info</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-6">
-                <img class="img-fluid" src="img/Professional Mugshot.jpg" alt="Portrait">
-              </div>
-              <div class="col-6 fs-4">
-                <p>Tim Nicholas</p>
-                <p>tsnicholas@bsu.edu</p>
-                <p>(317) 993-8411</p>
               </div>
             </div>
           </div>
@@ -148,43 +175,43 @@
     <div class="container">
       <h1 id="header" class="text-center" data-step="1" data-intro="This website is to demo how stack process in a last in, first out manner!">Stack Demo </h1>
       <div class="row">
-          <div class="col-3">
+          <div class="col-4">
             <ul class="list-group list-unstyled actionBar text-center">
               <li><label id="inputLabel" for="inputNumber">Add to Stack</label></li>
               <li class="list-group-item" >
                 <input class="from-control mx-auto gap-2 col-10" type="number" id="inputNumber" data-step="2" data-intro="Enter a number into the Stack" title="inputNumber" placeholder="Enter a number">
-                <p id="errorText" class="fw-bold fs-5 text-danger" hidden>This field is required!</p>
+                <p id="errorText" class="fw-bold fs-5 fs-sm-6 text-danger" hidden>This field is required!</p>
               </li>
               <li class="list-group-item">
-                <button class="btn btn-primary mx-auto gap-2 col-10" type="button" id="pushButton" title="Push"
+                <button class="btn btn-primary gap-2 col-10 fs-4 fs-sm-5 fs-xs-6" type="button" id="pushButton" title="Push"
                   data-step="3" data-intro="This button will push the number you enter unto the top of the stack."
                 >
                   Push
                 </button>
               </li>
               <li class="list-group-item">
-                <button class="btn btn-primary mx-auto gap-2 col-10" type="button" id="popButton" title="Pop"
+                <button class="btn btn-primary mx-auto gap-2 col-10 fs-4 fs-sm-5 fs-xs-6" type="button" id="popButton" title="Pop"
                   data-step="4" data-intro="This button will pop the top number from the stack."
                 >
                   Pop
                 </button>
               </li>
               <li class="list-group-item">
-                <button class="btn btn-primary mx-auto gap-2 col-10" type="button" id="peekButton" title="Peek"
+                <button class="btn btn-primary mx-auto gap-2 col-10 fs-4 fs-sm-5 fs-xs-6" type="button" id="peekButton" title="Peek"
                  data-step="5" data-intro="This button will peek at the top number from the stack."
                 >
                   Peek
                 </button>
               </li>
               <li class="list-group-item">
-                <button class="btn btn-primary mx-auto gap-2 col-10" type="button" id="sizeButton" title="Size"
+                <button class="btn btn-primary mx-auto gap-2 col-10 fs-4 fs-sm-5 fs-xs-6" type="button" id="sizeButton" title="Size"
                  data-step="6" data-intro="This button will display the size of the stack in the logs."
                 >
                   Size
                 </button>
               </li>
               <li class="list-group-item">
-                <button class="btn btn-primary mx-auto gap-2 col-10" type="button" id="emptyButton" title="isEmpty"
+                <button class="btn btn-primary mx-auto gap-2 col-10 fs-5 fs-sm-6 fs-xs-7" type="button" id="emptyButton" title="isEmpty"
                  data-step="7" data-intro="This button will display whether the stack is empty or not in the logs."
                 >
                   isEmpty
@@ -192,7 +219,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-9">
+          <div class="col-8">
             <ul class="list-group list-unstyled">
               <li class="list-group-item">
                 <label id="stackLabel" for="stack">Current Stack</label>

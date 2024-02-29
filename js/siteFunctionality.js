@@ -78,7 +78,7 @@ function printStack() {
     var current = stack.top;
     var output = "";
     while(current !== null) {
-        output = output.concat([`${current.data} `]);
+        output = output.concat([`${current.data}\n`]);
         current = current.next;
     }
     stackView.val(output);
